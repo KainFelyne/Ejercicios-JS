@@ -45,4 +45,4 @@ console.log(Math.sign(0));
 
 //*Math.sqrt() -> Devuelve la raiz cuadrada del valor.
 console.log("**Math.sqrt()**")
-console.log(Math.sqrt(5));
+console.log(Math.sqrt(64));
