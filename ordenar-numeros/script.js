@@ -17,7 +17,7 @@ let a = prompt('Introduce el primer numero');
 let b = prompt('Introduce el segundo numero');
 let c = prompt('Introduce el tercer numero');
 
-numbers.textContent = `Los números introducidos son: a${a}, b${b}, c${c}`;
+numbers.textContent = `Los números introducidos son: a(${a}), b(${b}), c(${c})`;
 
 if (a >= b && a >= c){
     if (b > c){
