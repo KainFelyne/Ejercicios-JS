@@ -11,10 +11,35 @@ cba = 321
  */
 
 const numbers = document.getElementById('numbers');
-const result = document.getElementById('results');
+const result = document.getElementById('result');
 
 let a = prompt('Introduce el primer numero');
 let b = prompt('Introduce el segundo numero');
 let c = prompt('Introduce el tercer numero');
 
-numbers.textContent = `Los números introducidos son: ${a}, ${b}, ${c}`;
+numbers.textContent = `Los números introducidos son: a${a}, b${b}, c${c}`;
+
+if (a >= b && a >= c){
+    if (b > c){
+        result.textContent = `Los números de mayor a menor son: ${a}, ${b}, ${c}`;
+    }
+    else{
+        result.textContent = `Los números de mayor a menor son: ${a}, ${c}, ${b}`;
+    }
+}
+else if (b >= a && b >= c){
+    if (a > c){
+        result.textContent = `Los números de mayor a menor son: ${b}, ${a}, ${c}`;
+    }
+    else{
+        result.textContent = `Los números de mayor a menor son: ${b}, ${c}, ${a}`;
+    }
+}
+else if (c >= a && c >= b){
+    if (a > b){
+        result.textContent = `Los números de mayor a menor son: ${c}, ${a}, ${b}`;
+    }
+    else{
+        result.textContent = `Los números de mayor a menor son: ${c}, ${b}, ${a}`;
+    }
+}
