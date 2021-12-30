@@ -10,7 +10,7 @@ Operador ternario
     segunda sentencia)
 */
 
-let num = 8;
+let num = 8 ;
 
 (num % 2 == 0) ? console.log(`${num} es un número par`) : console.log(`${num} es un número impar`) ;
 
