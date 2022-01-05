@@ -32,3 +32,12 @@ console.log("**.unshift()**");
 console.log(numbers2);
 numbers2.unshift(5);
 console.log(numbers2);
+
+let newLength = numbers2.push(11);
+
+console.log(numbers2);
+console.log(newLength);
+
+let newLength2 = numbers2.unshift(4);
+console.log(numbers2);
+console.log(newLength2);
