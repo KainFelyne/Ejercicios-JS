@@ -17,8 +17,21 @@
 
 let pass = '';
 
-while(pass != 'hola'){
+//#WHILE#
+
+
+/*while(pass != 'hola'){
     pass = prompt('Introduzca su contraseña')
 }
+
+console.log('Bucle finalizado');
+*/
+
+//##DOWHILE
+
+do{
+    pass = prompt('Introduzca su contraseña');
+}
+while (pass != 'hola');
 
 console.log('Bucle finalizado');
