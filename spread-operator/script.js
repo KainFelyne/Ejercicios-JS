@@ -50,8 +50,22 @@ console.log(arrConcat)
 
 // Enviar un número indefinido de argumento a una función (parametro REST)
 
+/*
 const restParms = (...numbers) => {
     console.log(numbers)
 }
 
-restParms()
+restParms(1, 2, 3, 4, 5, 6)
+*/
+
+//libreria math
+
+const numbers = [-12, 2, 3, 23, 43, 2, 3]
+
+console.log(Math.max(...numbers));
+console.log(Math.min(...numbers));
+
+
+// Eliminar elementos duplicados
+
+console.log([...new Set (numbers)])
