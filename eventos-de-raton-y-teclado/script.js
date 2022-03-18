@@ -15,6 +15,7 @@
 */
 
 const button = document.getElementById('button')
+const box = document.getElementById('box')
 
 //CLICK**********
 
@@ -27,4 +28,12 @@ button.addEventListener('click', ()=> {
 
 button.addEventListener('dblclick',() => {
     console.log('Doble CLICK')
+})
+
+box.addEventListener('mouseleave', () => {
+    box.style.background = 'red'
+})
+
+box.addEventListener('mouseenter', () => {
+    box.style.background = 'blue'
 })
