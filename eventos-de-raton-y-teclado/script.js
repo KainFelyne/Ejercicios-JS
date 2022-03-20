@@ -4,7 +4,7 @@
         dbclick - Cuando pulsamos 2 veces seguidas el botón izquierdo del ratón.
         mouseenter - Cuando entramos en la zona que tiene el evento.
         mouseleave - Cuando salimos de la zona que tiene el evento.
-        mousedown - Cuando pulsamos y no soltamos el botón izquierdo del ratón.
+        mousedown - Cuando pulsamos el botón izquierdo del ratón.
         mouseup - Cuando soltamos el botón izquierdo del ratón.
         mousemove - Cuando movemos el ratón.
 
@@ -15,25 +15,56 @@
 */
 
 const button = document.getElementById('button')
+const input = document.getElementById('input')
 const box = document.getElementById('box')
 
 //CLICK**********
 
 
-/*
+
 button.addEventListener('click', ()=> {
     console.log('CLICK'); 
 })
-*/
+
 
 button.addEventListener('dblclick',() => {
     console.log('Doble CLICK')
 })
 
-box.addEventListener('mouseleave', () => {
-    box.style.background = 'red'
+
+/*
+box.addEventListener('mouseenter', () => {
+    box.classList.replace('red',    'green')
 })
 
-box.addEventListener('mouseenter', () => {
-    box.style.background = 'blue'
+box.addEventListener('mouseleave', () => {
+    box.classList.replace('green', 'red')
+    
+})
+*/
+
+/*
+box.addEventListener('mousedown', () =>{
+    console.log('Has pulsado en la caja')
+})
+
+box.addEventListener('mouseup', () =>{
+    console.log('Has soltado en la caja')
+})
+*/
+
+/*
+box.addEventListener('mousemove', () =>{
+    console.log('Estas moviendo el ratón en la caja')
+})
+*/
+
+input.addEventListener('keydown', () =>{
+    console.log('Has pulsado una tecla')
+})
+
+
+
+input.addEventListener('keydown', () =>{
+    console.log('Has pulsado una tecla')
 })
