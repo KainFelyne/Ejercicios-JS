@@ -65,6 +65,11 @@ input.addEventListener('keydown', () =>{
 
 
 
-input.addEventListener('keydown', () =>{
-    console.log('Has pulsado una tecla')
+input.addEventListener('keyup', () =>{
+    console.log('Has soltado una tecla')
+})
+
+
+input.addEventListener('keypress', () =>{
+    console.log('estas soltando una tecla')
 })
