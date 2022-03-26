@@ -33,4 +33,18 @@
 const parent = document.getElementById('parent')
 //console.log(parent.parentNode)
 
-console.log(parent.childNodes)
+//console.log(parent.childNodes)
+//console.log(parent.children[2])
+
+//console.log(parent.firstElementChild)
+
+//console.log(parent.lastElementChild)
+
+
+//console.log(parent.hasChildNodes())
+
+
+console.log(parent.parentElement.nextElementSibling)
+
+
+console.log(parent.parentElement.previousElementSibling)
