@@ -82,3 +82,55 @@ console.log(location.hash)
     length
 */
 
+//history.back() -> Dirige a la pagina anterior
+//history.forward() -> Dirige a la pagina siguiente
+//history.(n | -n) -> Dirige al numero de pagina indicado
+//history.length -> Muestra el numero de paginas visitadas
+
+/*
+    Objeto date
+*/
+
+
+//const date = new Date()
+//console.log(date.getDay())
+//console.log(date.getDate())
+//console.log(date)
+
+
+
+/*
+    Timers
+        
+        setTimeout(() => {code}, delay-in-miliseconds) - Hace que se ejecute la función despues del delay. Si lo referenciamos mediamente una variable/constante. Podemos parar con clearTimeOut(referencia)
+
+        setInterval(() => {code}, delay-in-miliseconds) - Hace que se ejecute la función 
+*/
+
+/*
+button.addEventListener('click', () => {
+    //setTimeout(saludar, 3000)
+    setTimeout(() => {
+        console.log('Adios')
+    }, 3000)
+})
+*/
+
+const saludar = ()=> {
+    console.log('Hola')
+}
+
+
+/*
+const timeOut = setTimeout(() => {
+    console.log('Adios')
+}, 3000);
+
+button.addEventListener('click', () => {
+    clearTimeout(timeOut)
+})
+*/
+
+button.addEventListener('click', () => {
+    setInterval(saludar,3000)
+})
